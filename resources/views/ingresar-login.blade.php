@@ -31,7 +31,8 @@
 
             <div>
                 <input class="btn btn-success" type="submit" value="Ingresar">
-                <input class="btn btn-warning" type="reset" value="Limpiar">
+                <a class="btn btn-info" href="">Registrarse</a>
+
             </div>
 
 
