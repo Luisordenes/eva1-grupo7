@@ -8,14 +8,17 @@
   </head>
   <body>
 
+        <!-- Header -->
         @section('header')
             <h1>Bienvenido</h1><hr>
         @show
 
+        <!-- body -->
         <div class="container">
             @yield('content')
         </div>
-
+        
+        <!-- Footer -->
         @section('footer')
             <h3>Footer de mi web</h3>
         @show

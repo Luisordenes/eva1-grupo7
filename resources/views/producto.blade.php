@@ -1,88 +1,81 @@
 @extends('layouts.master')
 
 @section('content')
-        
-        
-        
+
+
+
         <div class="container">  
             
             <h1>Ingrese producto</h1>
-            <form method="GET" class="form-group" id="formulario">
+            <form method="post" class="col p-3 mb-2 bg-light text-dark" id="formulario">
                 
                 <br>
 
                 <!-- Nombre --> 
-                <label>Nombre Producto:</label>
-                
-                    <div>         
-                        
-                        <input type="Text" name="nombreProducto" required>
-                        
-                    </div>
+                               
+                <div class="form-group">         
+                    <label for="nombreProducto">Nombre Producto:</label>
+                    <input class="form-control form-control-lg" type="Text" placeholder="Ingrese nombre del producto..." id="nombreProducto" required>                        
+                </div>
                 
                 <br>
 
                 <!-- Categoria --> 
-                <label>Seleccione categoria:</label>
 
-                    <div>
-                        <select name="categoria" required>
-                            <option>Seleccione categoria</option>
-                            <option value="Vestuario">Vestuario</option>
-                            <option value="Tecno">Tecnologia</option>
-                            <option value="Muebles">Muebles</option>
-                        </select>    
-                    </div>
+                <div class="form-group">
+                    <label for="categoria">Seleccione categoria:</label>
+                    <select class="form-control form-control-lg " id="categoria" required>
+                        <option hidden value="">Seleccione categoria</option>
+                        <option value="Vestuario">Vestuario</option>
+                        <option value="Tecno">Tecnologia</option>
+                        <option value="Muebles">Muebles</option>
+                    </select>    
+                </div>
                 
                 <br>
 
                 <!-- Sucursal -->
-                <label>Seleccione sucursal:</label>    
-                
-                    <div>
-
-                        <input type="radio" name="radioSucursal" id="radioSucursal" value="1" required/>Santiago
-                        <input type="radio" name="radioSucursal" id="radioSucursal" value="2" required/>Viña del mar
-                        <input type="radio" name="radioSucursal" id="radioSucursal" value="3" required/>Rancagua
-
-                    </div>
+                                  
+                <div class="form-group">
+                    <label for="radioSucursal">Seleccione sucursal:</label> 
+                    <input class="form-control form-control-lg" type="radio" name="radioSucursal" id="radioSucursal" value="1" required/>Santiago
+                    <input class="form-control form-control-lg" type="radio" name="radioSucursal" id="radioSucursal" value="2" required/>Viña del mar
+                    <input class="form-control form-control-lg" type="radio" name="radioSucursal" id="radioSucursal" value="3" required/>Rancagua
+                </div>
 
                 <br>
 
                 <!-- Descripción -->
-                <label>Descripción:</label>    
+                    
+                <div class="form-group">
+                    <label for="descripcionProducto">Descripción:</label>
+                    <input class="form-control form-control-lg" type="Text" placeholder="Ingrese una descripción..." id="descripcionProducto" required>
+                </div>  
 
-                    <div>
+                <br>
 
-                    <input type="Text" name="descripcionProducto" required>
-
-                    </div>  
-
-
-                <br> 
-                 
                 <!-- Cantidad -->
-                <label>Cantidad</label>
 
-                    <div>
-                        <input type="Number" name="cantidad" required>
-                    </div> 
+                <div class="form-group">
+                    <label for="cantidad">Cantidad</label>
+                    <input class="form-control form-control-lg" type="Number" placeholder="Ingrese cantidad de productos..." id="cantidad" required>
+                </div> 
                     
                 <br> 
                  
                 <!-- Precio -->
-                <label>Precio:</label>
-
-                    <div>
-                        <input type="Number" name="precio" required>
-                    </div> 
+                
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input class="form-control form-control-lg" type="Number" placeholder="Ingrese precio del producto..." id="precio" required>
+                </div> 
 
                 <br>
 
                 <div>
-                     <button type="submit"> Guardar</button>
-                 </div>
-
+                    <input class="btn btn-success" type="submit" value="Guardar">
+                    <input class="btn btn-warning" type="reset" value="Limpiar">
+                </div>
 
             </form>      
         </div>

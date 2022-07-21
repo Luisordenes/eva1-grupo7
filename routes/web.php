@@ -17,7 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/productos/stock',function(){
+Route::get('/productos/registro',function(){
     return view('producto');
-        /*->with('productos', array('pantalon', 'polera', 'short'));*/
 });
