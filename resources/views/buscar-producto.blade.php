@@ -7,7 +7,7 @@
 
 
     <div class="container">
-        <h1>Ingrese producto</h1>
+        <h1>Buscar producto</h1>
             <form method="post" class="col p-3 mb-2 bg-light text-dark" id="formulario">
 
             <br>
